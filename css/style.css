@@ -143,4 +143,9 @@ body {
         flex-direction: column;
         gap: 4px;
     }
+
+    .colors {
+        justify-content: center;
+    }
+
 }
