@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.catalog {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    padding: 24px;
+    background: #fff;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+.card-content {
+    margin-left: 24px;
+    flex: 1;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image img {
+    max-width: 220px;
+    border-radius: 12px;
+}
+.card-spray-img {
+    transform: rotate(23deg);
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 250px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 220px;
+    /* тот же размер, что была 1 картинка */
+}
+/* сами картинки */
+.image-grid img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+.card-content h2 {
+    margin: 0 0 10px;
+}
+
+.card-content p {
+    margin: 0 0 16px;
+    color: #444;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.color {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.black {
+    background: #000;
+}
+
+.white {
+    background: #fff;
+}
+
+.turquoise {
+    background: #38d6d0;
+}
+
+.pink {
+    background: #ff2cff;
+}
+
+.yellow {
+    background: #ffe600;
+}
+
+.red {
+    background: #ff2b2b;
+}
+.green {
+    background: #248537;
+}
+.blue {
+    background: #1458ab;
+}
+.light-blue {
+    background: #93bff4;
+}
+
+.prices div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.prices span {
+    color: #555;
+}
+
+.prices strong {
+    font-weight: 600;
+}
+
+.recommended strong {
+    font-size: 18px;
+}
+
+
+
+/* 📱 Mobile */
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .prices div {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
