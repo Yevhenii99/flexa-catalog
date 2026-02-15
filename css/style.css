@@ -139,13 +139,34 @@ body {
         text-align: center;
     }
 
-    .prices div {
-        flex-direction: column;
-        gap: 4px;
+    .card-content {
+        margin: 0px;
+        margin-top: 20px;
     }
 
     .colors {
         justify-content: center;
     }
 
+}
+
+@media (max-width: 400px) {
+    .catalog {
+        padding: 10px;
+    }
+    .card {
+        margin-bottom: 10px;
+    }
+    .card-content h2 {
+        font-size: 20px;
+    }
+    .card-content p {
+        font-size: 15px;
+    }
+    .prices div {
+        font-size: 15px;
+    }
+    .recommended strong {
+        font-size: 16px;
+    }
 }
