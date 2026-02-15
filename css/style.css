@@ -82,6 +82,10 @@ body {
     background: #000;
 }
 
+.black-white {
+    background: linear-gradient(to right, black 50%, white 50%);
+}
+
 .white {
     background: #fff;
 }
@@ -109,6 +113,9 @@ body {
 }
 .light-blue {
     background: #93bff4;
+}
+.light-blue-white {
+    background: linear-gradient(to right, #93bff4 50%, white 50%);
 }
 
 .prices div {
